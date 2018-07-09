@@ -3,10 +3,15 @@ body {
   font-family: 'Crimson Text', serif;
   color: rgba(28, 28, 28, 0.8);
 }
-
-body p {
-  font-size:20px;
+a {
+  border-bottom: 1px solid #C0C0C0;
+  padding-bottom: 2px;
+  text-decoration:none;
 }
+
+  body p {
+    font-size:20px;
+  }
 
 #content {
   display: table;
@@ -17,7 +22,7 @@ body p {
   border-width: 2px !important;
   background-color: #fff;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
   #content #banner {
@@ -49,16 +54,17 @@ body p {
 
 #nav {
   font-family: 'Signika', sans-serif;
-  text-transform:uppercase;
   font-weight:600;
   padding-top:10px;
-  line-height: 0.5;
-  text-align: center;
-  word-spacing: 30px;
+  line-height:0.5;
+  letter-spacing:2px;
+  text-align:center;
+  word-spacing:30px;
 }
   #nav span {
     display: inline-block;
     position: relative;
+    text-transform:uppercase;
     margin: 0 0 2em 0;
   }
     #nav span:before,
@@ -70,7 +76,6 @@ body p {
       top: 0;
       width: 120px;
     }
-
     #nav span:before {
       right: 100%;
       margin-right: 15px;
@@ -79,3 +84,17 @@ body p {
       left: 100%;
       margin-left: 15px;
     }
+
+      #nav span a {
+        border:none;
+        padding-bottom:3px;
+      }
+      #nav span a:hover {
+        border-bottom: 1px solid #C0C0C0;
+        padding-bottom: 2px;
+      }
+      #nav span a.active {
+        border-bottom: 1px solid #C0C0C0;
+        padding-bottom: 2px;
+      }
+
