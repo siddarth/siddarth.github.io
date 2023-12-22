@@ -1,100 +1,54 @@
 body {
-  background-color: #f5f5f5;
-  font-family: 'Crimson Text', serif;
-  color: rgba(28, 28, 28, 0.8);
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 12px;
 }
+
+.container {
+  width: 700px;
+  margin: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.left-column {
+  width: 30%;
+  display: flex;
+  padding-top: 20px;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.left-column img {
+  width: 100%;
+  height: auto;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.grey-content {
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+.right-column {
+  width: 70%;
+  padding-left: 20px;
+}
+
+.right-column h1 {
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #ff8500;
+  margin-top: 0;
+}
+
 a {
-  border-bottom: 1px solid #C0C0C0;
-  padding-bottom: 2px;
-  text-decoration:none;
+  color: #ff3b8e;
 }
 
-  body p {
-    font-size:20px;
-  }
-
-#content {
-  display: table;
-  padding: 15px 25px 25px 25px;
-  width: 60%;
-  border-color: #eee;
-  border-style: solid;
-  border-width: 2px !important;
-  background-color: #fff;
-  margin: 0 auto;
-  margin-top: 5%;
+a:hover {
+  color: #ff8500;
 }
-
-  #content #banner {
-    padding:10px;
-    font-size:36px;
-    text-align:center;
-    font-family: 'EB Garamond', serif;
-  }
-
-  #content #left {
-    width:70%;
-    float:left;
-  }
-
-  #content #right {
-    width:30%;
-    float:right;
-  }
-
-  #content a {
-    color:grey;
-    font-weight:100;
-  }
-
-  #content img {
-    max-width:90%;
-    padding-left:10%;
-  }
-
-#nav {
-  font-family: 'Signika', sans-serif;
-  font-weight:600;
-  padding-top:10px;
-  line-height:0.5;
-  letter-spacing:2px;
-  text-align:center;
-  word-spacing:30px;
-}
-  #nav span {
-    display: inline-block;
-    position: relative;
-    text-transform:uppercase;
-    margin: 0 0 2em 0;
-  }
-    #nav span:before,
-    #nav span:after {
-      content: "";
-      position: absolute;
-      height: 5px;
-      border-bottom: 1px solid #C0C0C0;
-      top: 0;
-      width: 120px;
-    }
-    #nav span:before {
-      right: 100%;
-      margin-right: 15px;
-    }
-    #nav span:after {
-      left: 100%;
-      margin-left: 15px;
-    }
-
-      #nav span a {
-        border:none;
-        padding-bottom:3px;
-      }
-      #nav span a:hover {
-        border-bottom: 1px solid #C0C0C0;
-        padding-bottom: 2px;
-      }
-      #nav span a.active {
-        border-bottom: 1px solid #C0C0C0;
-        padding-bottom: 2px;
-      }
-
